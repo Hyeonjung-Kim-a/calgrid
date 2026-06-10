@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CalGrid</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #0d0d12;
+    color: #e8e8ea;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrap { max-width: 560px; padding: 56px 24px; text-align: center; }
+  .icon {
+    width: 96px; height: 96px; border-radius: 22px;
+    margin: 0 auto 28px; display: block;
+    background: #000;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+  }
+  h1 { font-size: 34px; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .tagline { color: #8a8a92; font-size: 17px; margin: 0 0 40px; }
+  .features { text-align: left; max-width: 380px; margin: 0 auto 48px; color: #c8c8cc; }
+  .features div { margin-bottom: 12px; }
+  .features b { color: #fff; font-weight: 600; }
+  .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .links a {
+    color: #e8e8ea; text-decoration: none;
+    border: 1px solid #2a2a32; border-radius: 10px;
+    padding: 10px 20px; font-size: 15px;
+    transition: border-color .15s, background .15s;
+  }
+  .links a:hover { border-color: #5a9cff; background: #15151c; }
+  .foot { color: #5a5a62; font-size: 13px; margin-top: 48px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 아이콘 미니 SVG (4×3 그리드, 일/토 액센트) -->
+  <svg class="icon" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CalGrid icon">
+    <rect width="96" height="96" rx="22" fill="#0a0a0e"/>
+    <g>
+      <!-- row 1 -->
+      <rect x="20" y="26" width="12" height="12" rx="3" fill="#3a3a42"/>
+      <rect x="36" y="26" width="12" height="12" rx="3" fill="#f2f2f5"/>
+      <rect x="52" y="26" width="12" height="12" rx="3" fill="#f2f2f5"/>
+      <rect x="68" y="26" width="12" height="12" rx="3" fill="#4477bb"/>
+      <!-- row 2 -->
+      <rect x="20" y="42" width="12" height="12" rx="3" fill="#d04545"/>
+      <rect x="36" y="42" width="12" height="12" rx="3" fill="#f2f2f5"/>
+      <rect x="52" y="42" width="12" height="12" rx="3" fill="#f2f2f5"/>
+      <rect x="68" y="42" width="12" height="12" rx="3" fill="#4477bb"/>
+      <!-- row 3 -->
+      <rect x="20" y="58" width="12" height="12" rx="3" fill="#d04545"/>
+      <rect x="36" y="58" width="12" height="12" rx="3" fill="#f2f2f5"/>
+      <rect x="52" y="58" width="12" height="12" rx="3" fill="#f2f2f5"/>
+      <rect x="68" y="58" width="12" height="12" rx="3" fill="#3a3a42"/>
+    </g>
+  </svg>
+
+  <h1>CalGrid</h1>
+  <p class="tagline">워치 페이스 위 깔끔한 달력<br><span style="font-size:14px">A clean calendar on your wrist</span></p>
+
+  <div class="features">
+    <div>· <b>순수한 그리드</b> — 일정도, 알림도, 점도 없이 날짜만</div>
+    <div>· <b>한국 공휴일 자동</b> — 대체공휴일·임시공휴일까지</div>
+    <div>· <b>6가지 컴플리케이션</b> — 2/3/4주 × 일/월 시작</div>
+    <div>· <b>어떤 페이스에도</b> — 컬러·단색 자동 적응</div>
+  </div>
+
+  <div class="links">
+    <a href="support.html">지원 / Support</a>
+    <a href="privacy.html">개인정보 / Privacy</a>
+  </div>
+
+  <p class="foot">© 2026 Hyeonjung Kim</p>
+
+</div>
+</body>
+</html>
